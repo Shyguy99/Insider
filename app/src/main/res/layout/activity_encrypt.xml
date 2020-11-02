@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".EncryptActivity">
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="273dp"
+        android:background="@drawable/blue_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:background="@android:color/transparent"
+            android:minHeight="?attr/actionBarSize"
+            android:paddingLeft="8dp"
+            android:theme="?attr/actionBarTheme"
+            app:titleTextAppearance="@style/toolbar" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="284dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginRight="62dp"
+        android:background="@drawable/blue_border_rounded"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <EditText
+            android:id="@+id/keytxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-1dp"
+            android:layout_marginLeft="-1dp"
+            android:layout_toEndOf="@+id/type_key"
+            android:layout_toRightOf="@+id/type_key"
+            android:background="@android:color/transparent"
+            android:hint="Enter 16 digit key"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:paddingLeft="14dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/type_key"
+            android:layout_width="25dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/keyimg" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/blue_border_rounded"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+        <EditText
+            android:id="@+id/data_to_hide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_toEndOf="@+id/keyboard_icon"
+            android:layout_toRightOf="@+id/keyboard_icon"
+            android:background="@android:color/transparent"
+            android:focusableInTouchMode="false"
+            android:hint="Text to Encode"
+            android:maxLines="1"
+            android:paddingLeft="17dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/keyboard_icon"
+            android:layout_width="20dp"
+            android:layout_height="21dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/keyboard" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/blue_border_rounded"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout3"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout3">
+
+        <TextView
+            android:id="@+id/imgbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-2dp"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/add_img_icon"
+            android:layout_toRightOf="@+id/add_img_icon"
+            android:background="@android:color/transparent"
+            android:hint="Add Image to Encrypt"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:paddingLeft="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="12dp"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/add_img_icon"
+            android:layout_width="34dp"
+            android:layout_height="24dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/imageedit_2_5904877670" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="149dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout4"
+        tools:srcCompat="@tools:sample/avatars"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/encbtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="62dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginRight="62dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/blue_fill_rounded_corner"
+        android:gravity="center"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:text="Encrypt"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_view"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="Encrypt"
+        android:textColor="@color/colorWhite"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout2"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

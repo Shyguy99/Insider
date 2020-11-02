@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".DecryptActivity">
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="273dp"
+        android:background="@drawable/blue_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:background="@android:color/transparent"
+            android:minHeight="?attr/actionBarSize"
+            android:paddingLeft="8dp"
+            android:theme="?attr/actionBarTheme"
+            app:titleTextAppearance="@style/toolbar" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="284dp"
+        android:layout_marginRight="62dp"
+        android:background="@drawable/blue_border_rounded"
+        android:maxWidth="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/key_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/type_keyd"
+            android:layout_toRightOf="@+id/type_keyd"
+            android:background="@android:color/transparent"
+            android:hint="Enter 16 digit key"
+            android:includeFontPadding="false"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:maxLines="1"
+            android:paddingLeft="17dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/type_keyd"
+            android:layout_width="20dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/keyimg" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/blue_border_rounded"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+        <TextView
+            android:id="@+id/decry_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/add_img_icon"
+            android:layout_toRightOf="@+id/add_img_icon"
+            android:background="@android:color/transparent"
+            android:hint="Add Image to Decrypt"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:paddingLeft="9dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/add_img_icon"
+            android:layout_width="34dp"
+            android:layout_height="23dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/imageedit_2_5904877670" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="268dp"
+        android:layout_height="202dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout4">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="Hidden Data will be Shown Here" />
+
+        <ScrollView
+            android:id="@+id/SCROLLER_ID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/textView2"
+            android:fillViewport="true"
+            android:padding="5dp"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:id="@+id/decoded_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:textColor="#000000"
+                tools:visibility="visible" />
+        </ScrollView>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/decrybtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="62dp"
+        android:layout_marginRight="62dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/blue_fill_rounded_corner"
+        android:gravity="center"
+        android:paddingTop="14dp"
+        android:paddingBottom="14dp"
+        android:text="Decrypt"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/decrypt_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:text="Decrypt"
+        android:textColor="@color/colorWhite"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout2"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
