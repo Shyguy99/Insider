@@ -56,9 +56,7 @@ width="200"
     hspace="10" vspace="10">](/readme/Screenshot_1604311262.png)
     
 
-## Contributors 🌟 
-
-Thanks goes to these wonderful people ✨✨:
+## ❤️ Project Admin
 <table>
 	<tr>
             <td align="center">
@@ -66,22 +64,25 @@ Thanks goes to these wonderful people ✨✨:
 		      <img src="https://avatars1.githubusercontent.com/u/47186922?v=4" width="100px" alt=""/><br />
 		      <sub><b>Shyguy99</b></sub>
 		 </a><br/>
-		 <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=Shyguy99">
+		 <a href="https://github.com/Shyguy99/Insider/commits?author=Shyguy99">
 			👑 💻 👀 💬 Author
 	         </a>
             </td>
-	    <td align="center">
-	         <a href="https://github.com/androiddevnotes">
-	              <img src="https://avatars2.githubusercontent.com/u/66256957?v=4" width="100px" alt=""/><br />
-		      <sub><b>androiddevnotes</b></sub>
-	         </a><br/>
-	         <a href="https://github.com/Jayshah6699/datascience-mashup/commits?author=androiddevnotes">
-			📖
-	         </a>
-           </td>
 	</tr>
 </table>
 
+## 🌟 Contributors 
+
+Thanks goes to these wonderful people ✨✨:
+<table>
+	<tr>
+            <td>
+		<a href="https://github.com/Shyguy99/Insider/graphs/contributors">
+  			<img src="https://contrib.rocks/image?repo=Shyguy99/Insider" />
+		</a>
+           </td>
+	</tr>
+</table>
  
 ## Contact
 
