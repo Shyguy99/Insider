@@ -71,6 +71,14 @@ width="200"
 	</tr>
 </table>
 
+## Open Source Events
+
+This project is a part of DevScript Winter of Code-DWoC.Winter of Code is an open source program 
+envisiond by DevScript that helps understand the paradigm of Open Source contribution.
+For more details, you can check out [this link](https://devscript.tech/woc/)
+<p align = "center"><img src = "dwoc.png" alt = "DWoC Logo" height=200px></p>
+
+
 ## 🌟 Contributors 
 
 Thanks goes to these wonderful people ✨✨:
